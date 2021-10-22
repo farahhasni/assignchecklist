@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/sap/bc/ui5_ui5/ui2/ushell/resources/sap/ushell/components/factsheet/vocabularies/UI.xml">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="/sap/opu/odata/sap/ZC_LOCATIONCHECKLISTS_TP_CDS/$metadata">
+		<edmx:Include Alias="ZC_LOCATIONCHECKLISTS_TP_CDS" Namespace="ZC_LOCATIONCHECKLISTS_TP_CDS"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="sempra.ehs.semprasimsassignchecklist.ZC_LOCATIONCHECKLISTS_TP_CDS">
+			<!--===============================================================================
+                Entity Type from chosen collection 
+                ================================================================================-->
+			<!--<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/ZC_LOCATIONCHECKLISTS_TPAssign_cl/Frequency"> -->
+			<!--	<Annotation Term="Common.ValueListWithFixedValues" Bool="true" /> -->
+			<!--</Annotations>-->
+			<Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm"
+				Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/ZC_LOCATIONCHECKLISTS_TPAssign_cl/Frequency">
+				<Annotation Term="Common.ValueList">
+					<Record>
+						<PropertyValue Property="Label" String="Value Help for Frequency"/>
+						<PropertyValue Property="CollectionPath" String="ZC_INSPECTION_FREQUENCY_VH"/>
+						<PropertyValue Property="SearchSupported" Bool="true"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut">
+									<PropertyValue Property="LocalDataProperty" PropertyPath="Frequency"/>
+									<PropertyValue Property="ValueListProperty" String="Frequency"/>
+								</Record>
+								<Record Type="Common.ValueListParameterDisplayOnly">
+									<PropertyValue Property="ValueListProperty" String="Frequency_Text"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

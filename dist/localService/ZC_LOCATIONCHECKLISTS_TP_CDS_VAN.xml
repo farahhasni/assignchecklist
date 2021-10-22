@@ -1,0 +1,75 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/zc_locationchecklists_tp_cds/$metadata"><edmx:Include Namespace="ZC_LOCATIONCHECKLISTS_TP_CDS" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zc_locationchecklists_tp_cds_van.v1">
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/DraftUUID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/DraftEntityType"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/DraftAccessType"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/ProcessingStartDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/DraftIsKeptByUser"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/EnqueueStartDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/DraftIsCreatedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/DraftIsLastChangedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/DraftIsProcessedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/CreatedByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/LastChangedByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.I_DraftAdministrativeDataType/InProcessByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/DraftUUID"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/HasActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/HasDraftEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/IsActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/MeasurePoint"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/MeasureObject"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/CheckListCatalog"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/FunctionalLocationText"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/FSAName"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/ResPersonName"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/CheckListCodeGroupText"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/DraftEntityCreationDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/DraftEntityLastChangeDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/Activation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/Assign_cl_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/Edit_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/Preparation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/Validation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/FunctionalLocation">
+				<Annotation Term="Common.Text" Path="FunctionalLocationText"><Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/></Annotation>
+			</Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/FSA">
+				<Annotation Term="Common.Text" Path="FSAName"><Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/></Annotation>
+			</Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType/ResPerson">
+				<Annotation Term="Common.Text" Path="ResPersonName"><Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"/></Annotation>
+			</Annotations>
+			<Annotations Target="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TPType">
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ResPerson"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataFieldForAction"><PropertyValue Property="Label" String="Assign Checklist"/><PropertyValue Property="Action"
+							String="ZC_LOCATIONCHECKLISTS_TP_CDS.ZC_LOCATIONCHECKLISTS_TP_CDS_Entities/ZC_LOCATIONCHECKLISTS_TPAssign_cl"/><PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="FunctionalLocation"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="FSA"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ResPerson"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CheckListCodeGroup"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>CheckListCodeGroup</PropertyPath>
+						<PropertyPath>FSA</PropertyPath>
+						<PropertyPath>ResPerson</PropertyPath>
+						<PropertyPath>FunctionalLocation</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

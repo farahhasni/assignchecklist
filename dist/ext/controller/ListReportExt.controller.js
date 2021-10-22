@@ -1,0 +1,1 @@
+sap.ui.controller("sempra.ehs.semprasimsassignchecklist.ext.controller.ListReportExt",{onInit:function(){var e=this.getView();var t=e.getId();var s=e.byId(t+"--deleteEntry");s.setVisible(false)}});
